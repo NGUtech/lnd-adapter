@@ -1,0 +1,17 @@
+lnd.adapter.filesystem:
+  connector: daikon.filesystem
+  settings:
+    mounts:
+      migration:
+        adapter: League\Flysystem\Adapter\Local
+        location: ${crates.lnd.adapter.migration_dir}
+
+lnd.adapter.message_queue:
+  connector: daikon.message_queue
+
+lnd.adapter.message_queue.admin:
+  connector: daikon.message_queue.admin
+
+lnd.adapter.grpc:
+  class: NGUtech\Lnd\Connector\LndGrpcConnector
+  settings: ${crates.lnd.adapter.connectors.grpc}

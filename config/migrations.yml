@@ -1,0 +1,19 @@
+migration_loaders:
+  lnd.adapter.message_queue:
+    class: Daikon\Flysystem\Migration\FlysystemMigrationLoader
+    connector: lnd.adapter.filesystem
+    settings:
+      location: migration://rabbitmq
+
+migration_adapters:
+  lnd.adapter.message_queue:
+    class: Daikon\RabbitMq3\Migration\RabbitMq3MigrationAdapter
+    connector: lnd.adapter.message_queue.admin
+    settings:
+      exchange: lnd.adapter.migration_list
+
+migration_targets:
+  lnd.adapter.message_queue:
+    enabled: true
+    migration_adapter: lnd.adapter.message_queue
+    migration_loader: lnd.adapter.message_queue

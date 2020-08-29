@@ -1,0 +1,5 @@
+job_workers:
+  lnd.adapter.message_queue:
+    class: NGUtech\Lnd\Message\LndMessageWorker
+    dependencies:
+      connector: lnd.adapter.message_queue
