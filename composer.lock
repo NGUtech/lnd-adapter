@@ -782,12 +782,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/daikon-cqrs/money-interop.git",
-                "reference": "2290f028fd95ce712655815c2d70a6418d012a94"
+                "reference": "52e80feaaa21390e84851bf9f7a37f702f098ef9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/daikon-cqrs/money-interop/zipball/2290f028fd95ce712655815c2d70a6418d012a94",
-                "reference": "2290f028fd95ce712655815c2d70a6418d012a94",
+                "url": "https://api.github.com/repos/daikon-cqrs/money-interop/zipball/52e80feaaa21390e84851bf9f7a37f702f098ef9",
+                "reference": "52e80feaaa21390e84851bf9f7a37f702f098ef9",
                 "shasum": ""
             },
             "require": {
@@ -823,7 +823,7 @@
                 "payment",
                 "wallet"
             ],
-            "time": "2020-08-29T20:42:23+00:00"
+            "time": "2020-08-30T16:55:50+00:00"
         },
         {
             "name": "daikon/rabbitmq3-adapter",
@@ -831,12 +831,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/daikon-cqrs/rabbitmq3-adapter.git",
-                "reference": "86e2b8509aadc6edd2061b7e1ba3b54805e58aaa"
+                "reference": "d3cd374b9ddee7c267f3e2522a6c7a21022e3975"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/daikon-cqrs/rabbitmq3-adapter/zipball/86e2b8509aadc6edd2061b7e1ba3b54805e58aaa",
-                "reference": "86e2b8509aadc6edd2061b7e1ba3b54805e58aaa",
+                "url": "https://api.github.com/repos/daikon-cqrs/rabbitmq3-adapter/zipball/d3cd374b9ddee7c267f3e2522a6c7a21022e3975",
+                "reference": "d3cd374b9ddee7c267f3e2522a6c7a21022e3975",
                 "shasum": ""
             },
             "require": {
@@ -870,7 +870,7 @@
                 "adapter",
                 "rabbitmq3"
             ],
-            "time": "2020-08-29T19:35:24+00:00"
+            "time": "2020-08-31T19:00:25+00:00"
         },
         {
             "name": "daikon/read-model",
@@ -2571,12 +2571,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NGUtech/bitcoin-interop.git",
-                "reference": "009af822be781c2528a83cafb16f1f6d00abe0f1"
+                "reference": "1eb25ca9b1ccf581e1fe03b7529e5355b45d3949"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NGUtech/bitcoin-interop/zipball/009af822be781c2528a83cafb16f1f6d00abe0f1",
-                "reference": "009af822be781c2528a83cafb16f1f6d00abe0f1",
+                "url": "https://api.github.com/repos/NGUtech/bitcoin-interop/zipball/1eb25ca9b1ccf581e1fe03b7529e5355b45d3949",
+                "reference": "1eb25ca9b1ccf581e1fe03b7529e5355b45d3949",
                 "shasum": ""
             },
             "require": {
@@ -2613,7 +2613,7 @@
                 "interop",
                 "transaction"
             ],
-            "time": "2020-08-29T21:09:35+00:00"
+            "time": "2020-08-31T17:30:43+00:00"
         },
         {
             "name": "ngutech/lightning-interop",
@@ -2711,16 +2711,16 @@
         },
         {
             "name": "php-amqplib/php-amqplib",
-            "version": "v2.11.3",
+            "version": "v2.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-amqplib/php-amqplib.git",
-                "reference": "6353c5d2d3021a301914bc6566e695c99cfeb742"
+                "reference": "dfcccd36bf12b4c7cc3ec74d571e00e0f767232e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-amqplib/php-amqplib/zipball/6353c5d2d3021a301914bc6566e695c99cfeb742",
-                "reference": "6353c5d2d3021a301914bc6566e695c99cfeb742",
+                "url": "https://api.github.com/repos/php-amqplib/php-amqplib/zipball/dfcccd36bf12b4c7cc3ec74d571e00e0f767232e",
+                "reference": "dfcccd36bf12b4c7cc3ec74d571e00e0f767232e",
                 "shasum": ""
             },
             "require": {
@@ -2744,7 +2744,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.11-dev"
+                    "dev-master": "2.12-dev"
                 }
             },
             "autoload": {
@@ -2784,7 +2784,7 @@
                 "queue",
                 "rabbitmq"
             ],
-            "time": "2020-05-13T13:56:11+00:00"
+            "time": "2020-08-25T01:39:32+00:00"
         },
         {
             "name": "php-ds/php-ds",
@@ -3720,16 +3720,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v5.1.3",
+            "version": "v5.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "2226c68009627934b8cfc01260b4d287eab070df"
+                "reference": "51ff337ce194bdc3d8db12b20ce8cd54ac9f71e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/2226c68009627934b8cfc01260b4d287eab070df",
-                "reference": "2226c68009627934b8cfc01260b4d287eab070df",
+                "url": "https://api.github.com/repos/symfony/console/zipball/51ff337ce194bdc3d8db12b20ce8cd54ac9f71e9",
+                "reference": "51ff337ce194bdc3d8db12b20ce8cd54ac9f71e9",
                 "shasum": ""
             },
             "require": {
@@ -3809,7 +3809,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-06T13:23:11+00:00"
+            "time": "2020-08-17T13:51:41+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -3877,16 +3877,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v5.1.3",
+            "version": "v5.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "4298870062bfc667cb78d2b379be4bf5dec5f187"
+                "reference": "2b765f0cf6612b3636e738c0689b29aa63088d5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/4298870062bfc667cb78d2b379be4bf5dec5f187",
-                "reference": "4298870062bfc667cb78d2b379be4bf5dec5f187",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/2b765f0cf6612b3636e738c0689b29aa63088d5d",
+                "reference": "2b765f0cf6612b3636e738c0689b29aa63088d5d",
                 "shasum": ""
             },
             "require": {
@@ -3936,7 +3936,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-20T17:43:50+00:00"
+            "time": "2020-08-17T10:01:29+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -4719,16 +4719,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v5.1.3",
+            "version": "v5.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "f629ba9b611c76224feb21fe2bcbf0b6f992300b"
+                "reference": "0de4cc1e18bb596226c06a82e2e7e9bc6001a63a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/f629ba9b611c76224feb21fe2bcbf0b6f992300b",
-                "reference": "f629ba9b611c76224feb21fe2bcbf0b6f992300b",
+                "url": "https://api.github.com/repos/symfony/string/zipball/0de4cc1e18bb596226c06a82e2e7e9bc6001a63a",
+                "reference": "0de4cc1e18bb596226c06a82e2e7e9bc6001a63a",
                 "shasum": ""
             },
             "require": {
@@ -4800,20 +4800,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-08T08:27:49+00:00"
+            "time": "2020-08-17T07:48:54+00:00"
         },
         {
             "name": "symfony/yaml",
-            "version": "v5.1.3",
+            "version": "v5.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "ea342353a3ef4f453809acc4ebc55382231d4d23"
+                "reference": "a44bd3a91bfbf8db12367fa6ffac9c3eb1a8804a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/ea342353a3ef4f453809acc4ebc55382231d4d23",
-                "reference": "ea342353a3ef4f453809acc4ebc55382231d4d23",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/a44bd3a91bfbf8db12367fa6ffac9c3eb1a8804a",
+                "reference": "a44bd3a91bfbf8db12367fa6ffac9c3eb1a8804a",
                 "shasum": ""
             },
             "require": {
@@ -4877,7 +4877,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-20T17:43:50+00:00"
+            "time": "2020-08-26T08:30:57+00:00"
         },
         {
             "name": "willdurand/negotiation",
@@ -5546,16 +5546,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.9.0",
+            "version": "v4.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "aaee038b912e567780949787d5fe1977be11a778"
+                "reference": "88e519766fc58bd46b8265561fb79b54e2e00b28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/aaee038b912e567780949787d5fe1977be11a778",
-                "reference": "aaee038b912e567780949787d5fe1977be11a778",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/88e519766fc58bd46b8265561fb79b54e2e00b28",
+                "reference": "88e519766fc58bd46b8265561fb79b54e2e00b28",
                 "shasum": ""
             },
             "require": {
@@ -5594,7 +5594,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-08-18T19:48:01+00:00"
+            "time": "2020-08-30T16:15:20+00:00"
         },
         {
             "name": "openlss/lib-array2xml",
@@ -5959,16 +5959,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "9.1.5",
+            "version": "9.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "adea70610c070869261d2d0a62fa968611447b56"
+                "reference": "d25b24b1cd14772bde4d75daeb393dc17db9f6e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/adea70610c070869261d2d0a62fa968611447b56",
-                "reference": "adea70610c070869261d2d0a62fa968611447b56",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/d25b24b1cd14772bde4d75daeb393dc17db9f6e6",
+                "reference": "d25b24b1cd14772bde4d75daeb393dc17db9f6e6",
                 "shasum": ""
             },
             "require": {
@@ -6028,7 +6028,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-08-27T06:29:01+00:00"
+            "time": "2020-08-31T06:31:46+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",

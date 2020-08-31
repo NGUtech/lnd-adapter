@@ -76,30 +76,24 @@ final class LndMessageWorker implements WorkerInterface
 
     private function execute(AMQPMessage $amqpMessage): void
     {
-        $deliveryInfo = $amqpMessage->delivery_info;
-        /** @var AMQPChannel $channel */
-        $channel = $deliveryInfo['channel'];
-        $deliveryTag = $deliveryInfo['delivery_tag'];
-        $routingKey = $deliveryInfo['routing_key'];
-
         try {
-            $message = $this->createMessage($routingKey, $amqpMessage);
+            $message = $this->createMessage($amqpMessage);
             if ($message instanceof LightningMessageInterface) {
                 $this->messageBus->publish($message, MessageBusProvisioner::EVENTS_CHANNEL);
             }
-            $channel->basic_ack($deliveryTag);
+            $amqpMessage->ack();
         } catch (RuntimeException $error) {
             $this->logger->error(
-                "Error handling lnd message '$routingKey'.",
+                "Error handling lnd message '{$amqpMessage->getRoutingKey()}'.",
                 ['exception' => $error->getTrace()]
             );
-            $channel->basic_nack($deliveryTag, false, false);
+            $amqpMessage->nack();
         }
     }
 
-    private function createMessage(string $routingKey, AMQPMessage $amqpMessage): ?LightningMessageInterface
+    private function createMessage(AMQPMessage $amqpMessage): ?LightningMessageInterface
     {
-        switch ($routingKey) {
+        switch ($amqpMessage->getRoutingKey()) {
             case self::MESSAGE_INVOICE:
                 $message = $this->createInvoiceMessage($amqpMessage);
                 break;
