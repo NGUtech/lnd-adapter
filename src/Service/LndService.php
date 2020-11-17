@@ -226,6 +226,7 @@ class LndService implements LightningServiceInterface
             'preimageHash' => bin2hex($invoice->getRHash()),
             'request' => $invoice->getPaymentRequest(),
             'amount' => $invoice->getValueMsat().SatoshiCurrencies::MSAT,
+            'amountPaid' => $invoice->getAmtPaidMsat().SatoshiCurrencies::MSAT,
             'label' => $invoice->getMemo(),
             'state' => (string)$this->mapInvoiceState($invoice->getState()),
             'createdAt' => $invoice->getCreationDate()
@@ -263,6 +264,7 @@ class LndService implements LightningServiceInterface
             'preimageHash' => $payment->getPaymentHash(),
             'request' => $payment->getPaymentRequest(),
             'amount' => $payment->getValueMsat().SatoshiCurrencies::MSAT,
+            'amountPaid' => $payment->getValueMsat().SatoshiCurrencies::MSAT, //may change in future
             'feeSettled' => $payment->getFeeMsat().SatoshiCurrencies::MSAT,
             'state' => (string)$this->mapPaymentState($payment->getStatus()),
             'createdAt' => $payment->getCreationDate()
