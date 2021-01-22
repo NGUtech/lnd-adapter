@@ -207,14 +207,14 @@ class LndService implements LightningServiceInterface
         return !$routeFee->isZero() && $feeLimit->isGreaterThanOrEqual($routeFee) ? $feeLimit : $routeFee;
     }
 
-    public function getInvoice(string $preimageHash): ?LightningInvoice
+    public function getInvoice(Hash $preimageHash): ?LightningInvoice
     {
         /** @var LndGrpcClient $client */
         $client = $this->connector->getConnection();
 
         /** @var Invoice $invoice */
         list($invoice, $status) = $client->lnrpc->LookupInvoice(
-            new PaymentHash(['r_hash_str' => $preimageHash])
+            new PaymentHash(['r_hash_str' => (string)$preimageHash])
         )->wait();
 
         if ($status->code !== 0) {
