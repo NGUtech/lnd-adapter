@@ -291,7 +291,9 @@ class LndService implements LightningServiceInterface
     {
         return ($this->settings['request']['enabled'] ?? true)
             && $amount->isGreaterThanOrEqual(
-                $this->convert(($this->settings['request']['minimum'] ?? '1'.SatoshiCurrencies::MSAT))
+                $this->convert(($this->settings['request']['minimum'] ?? LightningInvoice::AMOUNT_MIN))
+            ) && $amount->isLessThanOrEqual(
+                $this->convert(($this->settings['request']['maximum'] ?? LightningInvoice::AMOUNT_MAX))
             );
     }
 
@@ -299,7 +301,9 @@ class LndService implements LightningServiceInterface
     {
         return ($this->settings['send']['enabled'] ?? true)
             && $amount->isGreaterThanOrEqual(
-                $this->convert(($this->settings['send']['minimum'] ?? '1'.SatoshiCurrencies::MSAT))
+                $this->convert(($this->settings['send']['minimum'] ?? LightningInvoice::AMOUNT_MIN))
+            ) && $amount->isLessThanOrEqual(
+                $this->convert(($this->settings['send']['maximum'] ?? LightningInvoice::AMOUNT_MAX))
             );
     }
 
