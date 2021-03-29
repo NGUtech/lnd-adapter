@@ -189,6 +189,7 @@ class LndService implements LightningServiceInterface
             ])
         )->wait();
 
+        //@todo handle no-route errors
         if ($status->code !== 0) {
             $this->logger->error($status->details);
             throw new PaymentServiceFailed($status->details);

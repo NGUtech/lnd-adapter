@@ -17,7 +17,7 @@
         "daikon/money-interop": "master@dev",
         "daikon/rabbitmq3-adapter": "master@dev",
         "daikon/value-object": "master@dev",
-        "lnpay/php-lnd-grpc": "^0.10.4-beta",
+        "lnpay/php-lnd-grpc": "^0.12.1-beta",
         "ngutech/bitcoin-interop": "master@dev",
         "ngutech/lightning-interop": "master@dev",
         "php-amqplib/php-amqplib": "^2.8",
