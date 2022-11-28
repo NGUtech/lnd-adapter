@@ -2583,16 +2583,16 @@
         },
         {
             "name": "lnpay/php-lnd-grpc",
-            "version": "v0.12.1-beta",
+            "version": "v0.13.0-beta",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lnpay/php-lnd-grpc.git",
-                "reference": "39f60fe67e233ca138c79058c810042c7f335a31"
+                "reference": "9740411d91e98ae27c98da648213dd27bc46ba70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lnpay/php-lnd-grpc/zipball/39f60fe67e233ca138c79058c810042c7f335a31",
-                "reference": "39f60fe67e233ca138c79058c810042c7f335a31",
+                "url": "https://api.github.com/repos/lnpay/php-lnd-grpc/zipball/9740411d91e98ae27c98da648213dd27bc46ba70",
+                "reference": "9740411d91e98ae27c98da648213dd27bc46ba70",
                 "shasum": ""
             },
             "require": {
@@ -2623,9 +2623,9 @@
             "description": "PHP LND RPC Implementation",
             "support": {
                 "issues": "https://github.com/lnpay/php-lnd-grpc/issues",
-                "source": "https://github.com/lnpay/php-lnd-grpc/tree/v0.12.1-beta"
+                "source": "https://github.com/lnpay/php-lnd-grpc/tree/v0.13.0-beta"
             },
-            "time": "2021-03-21T19:25:23+00:00"
+            "time": "2021-06-23T18:28:31+00:00"
         },
         {
             "name": "middlewares/cors",
